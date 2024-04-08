@@ -1,0 +1,6 @@
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Comun\bin\Debug\Comun.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Comun\bin\Debug\Comun.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Comun\obj\Debug\Comun.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Comun\obj\Debug\Comun.pdb

@@ -1,0 +1,18 @@
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Logica de Negocio.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Logica de Negocio.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Acceso a datos.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Cliente Rest.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Comun.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Modelo.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Acceso a datos.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Cliente Rest.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Comun.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Modelo.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\obj\Debug\Logica de Negocio.csproj.AssemblyReference.cache
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\obj\Debug\Logica de Negocio.csproj.CoreCompileInputs.cache
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\obj\Debug\Logica d.66E82047.Up2Date
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\obj\Debug\Logica de Negocio.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\obj\Debug\Logica de Negocio.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\EntityFramework.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Modelo.dll.config
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\EntityFramework.xml

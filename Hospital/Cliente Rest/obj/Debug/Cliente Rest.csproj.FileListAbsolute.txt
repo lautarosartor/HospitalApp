@@ -1,0 +1,14 @@
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\bin\Debug\Cliente Rest.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\bin\Debug\Cliente Rest.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\bin\Debug\Comun.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\bin\Debug\Modelo.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\bin\Debug\Comun.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\bin\Debug\Modelo.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\obj\Debug\Cliente Rest.csproj.AssemblyReference.cache
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\obj\Debug\Cliente Rest.csproj.CoreCompileInputs.cache
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\obj\Debug\Cliente .AA726FE5.Up2Date
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\obj\Debug\Cliente Rest.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\obj\Debug\Cliente Rest.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\bin\Debug\EntityFramework.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\bin\Debug\Modelo.dll.config
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Cliente Rest\bin\Debug\EntityFramework.xml

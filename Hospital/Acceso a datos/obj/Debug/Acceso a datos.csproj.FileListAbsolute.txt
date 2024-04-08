@@ -1,0 +1,14 @@
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\Acceso a datos.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\Acceso a datos.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\Comun.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\Modelo.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\Comun.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\Modelo.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\obj\Debug\Acceso a datos.csproj.AssemblyReference.cache
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\obj\Debug\Acceso a datos.csproj.CoreCompileInputs.cache
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\obj\Debug\Acceso a.7A4216EC.Up2Date
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\obj\Debug\Acceso a datos.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\obj\Debug\Acceso a datos.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\EntityFramework.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\Modelo.dll.config
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\EntityFramework.xml
