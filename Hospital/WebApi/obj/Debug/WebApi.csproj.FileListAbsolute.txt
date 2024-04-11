@@ -77,3 +77,24 @@ D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebA
 D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\EntityFramework.dll
 D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\Modelo.dll.config
 D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\EntityFramework.xml
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\Acceso a datos.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\Acceso a datos.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\Acceso a datos.dll.config
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\EntityFramework.SqlServer.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\EntityFramework.SqlServer.xml
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\Newtonsoft.Json.Bson.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Buffers.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Memory.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Numerics.Vectors.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Threading.Tasks.Extensions.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Web.Cors.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Web.Http.Cors.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\Newtonsoft.Json.Bson.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\Newtonsoft.Json.Bson.xml
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Buffers.xml
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Memory.xml
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Numerics.Vectors.xml
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Threading.Tasks.Extensions.xml
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\WebApi\bin\System.Web.Http.Cors.xml

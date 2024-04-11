@@ -15,16 +15,16 @@ namespace Modelo.Modelos
     public class EgresoMetadata
     {
         [Required]
-        public System.DateTime Fecha { get; set; }
+        public System.DateTime fecha { get; set; }
 
         [Required]
         [Range(0, 99999999999.99)]
-        public decimal Monto { get; set; }
+        public decimal monto { get; set; }
 
         [Required]
-        public long IdMedico { get; set; }
+        public long idMedico { get; set; }
 
         [Required]
-        public long IdIngreso { get; set; }
+        public long idIngreso { get; set; }
     }
 }

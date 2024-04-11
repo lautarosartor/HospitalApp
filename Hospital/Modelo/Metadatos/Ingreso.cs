@@ -15,21 +15,21 @@ namespace Modelo.Modelos
     public class IngresoMetada
     {
         [Required]
-        public System.DateTime Fecha { get; set; }
+        public System.DateTime fecha { get; set; }
 
         [Required]
-        public int NumeroSala { get; set; }
+        public int numeroSala { get; set; }
 
         [Required]
-        public int NumeroCama { get; set; }
+        public int numeroCama { get; set; }
 
         [Required]
-        public string Diagnostico { get; set; }
+        public string diagnostico { get; set; }
 
         [Required]
-        public long IdMedico { get; set; }
+        public long idMedico { get; set; }
 
         [Required]
-        public long IdPaciente { get; set; }
+        public long idPaciente { get; set; }
     }
 }

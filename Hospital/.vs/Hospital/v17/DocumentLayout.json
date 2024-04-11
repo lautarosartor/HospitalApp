@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{88DE893A-4249-4625-BB4E-1AAF4DD15FBA}|Comun\\Comun.csproj|d:\\usuarios\\usuario\\escritorio\\programaci\u00F3n\\proyectos\\hospitalapp\\hospital\\comun\\viewmodels\\listadopaginadovmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88DE893A-4249-4625-BB4E-1AAF4DD15FBA}|Comun\\Comun.csproj|solutionrelative:comun\\viewmodels\\listadopaginadovmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88DE893A-4249-4625-BB4E-1AAF4DD15FBA}|Comun\\Comun.csproj|d:\\usuarios\\usuario\\escritorio\\programaci\u00F3n\\proyectos\\hospitalapp\\hospital\\comun\\viewmodels\\medicovmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88DE893A-4249-4625-BB4E-1AAF4DD15FBA}|Comun\\Comun.csproj|solutionrelative:comun\\viewmodels\\medicovmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,34 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ListadoPaginadoVMR.cs",
-              "DocumentMoniker": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\Comun\\ViewModels\\ListadoPaginadoVMR.cs",
-              "RelativeDocumentMoniker": "Comun\\ViewModels\\ListadoPaginadoVMR.cs",
-              "ToolTip": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\Comun\\ViewModels\\ListadoPaginadoVMR.cs",
-              "RelativeToolTip": "Comun\\ViewModels\\ListadoPaginadoVMR.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T23:10:35.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MedicoVMR.cs",
-              "DocumentMoniker": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\Comun\\ViewModels\\MedicoVMR.cs",
-              "RelativeDocumentMoniker": "Comun\\ViewModels\\MedicoVMR.cs",
-              "ToolTip": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\Comun\\ViewModels\\MedicoVMR.cs",
-              "RelativeToolTip": "Comun\\ViewModels\\MedicoVMR.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T23:10:33.661Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"

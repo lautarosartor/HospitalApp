@@ -16,3 +16,4 @@ D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logi
 D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\EntityFramework.dll
 D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Modelo.dll.config
 D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\EntityFramework.xml
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Logica de Negocio\bin\Debug\Acceso a datos.dll.config

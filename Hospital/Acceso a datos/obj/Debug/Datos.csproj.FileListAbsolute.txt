@@ -12,3 +12,6 @@ D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acce
 D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\obj\Debug\Datos.csproj.Up2Date
 D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\obj\Debug\Acceso a datos.dll
 D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\obj\Debug\Acceso a datos.pdb
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\Acceso a datos.dll.config
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\Usuarios\Usuario\Escritorio\Programación\Proyectos\HospitalApp\Hospital\Acceso a datos\bin\Debug\EntityFramework.SqlServer.xml
