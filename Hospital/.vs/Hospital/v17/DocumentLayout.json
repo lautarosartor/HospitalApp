@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D46433E-95A2-4B26-818E-54D5341EB107}|Acceso a datos\\Datos.csproj|d:\\usuarios\\usuario\\escritorio\\programaci\u00F3n\\proyectos\\hospitalapp\\hospital\\acceso a datos\\dal\\egresodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D46433E-95A2-4B26-818E-54D5341EB107}|Acceso a datos\\Datos.csproj|solutionrelative:acceso a datos\\dal\\egresodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D46433E-95A2-4B26-818E-54D5341EB107}|Acceso a datos\\Datos.csproj|d:\\usuarios\\usuario\\escritorio\\programaci\u00F3n\\proyectos\\hospitalapp\\hospital\\acceso a datos\\dal\\medicodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D46433E-95A2-4B26-818E-54D5341EB107}|Acceso a datos\\Datos.csproj|solutionrelative:acceso a datos\\dal\\medicodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +35,38 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EgresoDAL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\Acceso a datos\\DAL\\EgresoDAL.cs",
+              "RelativeDocumentMoniker": "Acceso a datos\\DAL\\EgresoDAL.cs",
+              "ToolTip": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\Acceso a datos\\DAL\\EgresoDAL.cs",
+              "RelativeToolTip": "Acceso a datos\\DAL\\EgresoDAL.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T17:10:20.101Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MedicoDAL.cs",
+              "DocumentMoniker": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\Acceso a datos\\DAL\\MedicoDAL.cs",
+              "RelativeDocumentMoniker": "Acceso a datos\\DAL\\MedicoDAL.cs",
+              "ToolTip": "D:\\Usuarios\\Usuario\\Escritorio\\Programaci\u00F3n\\Proyectos\\HospitalApp\\Hospital\\Acceso a datos\\DAL\\MedicoDAL.cs",
+              "RelativeToolTip": "Acceso a datos\\DAL\\MedicoDAL.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA8AAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T17:09:00.432Z",
+              "EditorCaption": ""
             }
           ]
         }

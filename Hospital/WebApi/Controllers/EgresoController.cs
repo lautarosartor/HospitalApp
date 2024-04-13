@@ -18,23 +18,22 @@ namespace WebApi.Controllers
 {
     //Establecemos los CORS
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    public class MedicoController : ApiController
+    public class EgresoController : ApiController
     {
-        //Cantidad por defecto sera 10, pagina inicial es 0, texto null
         [HttpGet]
         public IHttpActionResult LeerTodo(int cantidad = 10, int pagina = 0, string textoBusqueda = null)
         {
-            var respuesta = new RespuestaVMR<ListadoPaginadoVMR<MedicoVMR>>();
+            var respuesta = new RespuestaVMR<ListadoPaginadoVMR<EgresoVMR>>();
 
             try
             {
-                respuesta.Datos = MedicoBLL.LeerTodo(cantidad, pagina, textoBusqueda);
+                respuesta.Datos = EgresoBLL.LeerTodo(cantidad, pagina, textoBusqueda);
             }
             catch (Exception e)
             {
                 respuesta.Codigo = HttpStatusCode.InternalServerError;
                 respuesta.Datos = null;
-                respuesta.Mensajes.Add(e.Message);  //Almacenamos los mensajes errores
+                respuesta.Mensajes.Add(e.Message);
                 respuesta.Mensajes.Add(e.ToString());
             }
 
@@ -43,19 +42,19 @@ namespace WebApi.Controllers
 
 
         [HttpGet]
-        public IHttpActionResult LeerUno(long id)   //aca pongo id en vez de idMedico porque asi esta en la BD
+        public IHttpActionResult LeerUno(long id)
         {
-            var respuesta = new RespuestaVMR<MedicoVMR>();
+            var respuesta = new RespuestaVMR<EgresoVMR>();
 
             try
             {
-                respuesta.Datos = MedicoBLL.LeerUno(id);
+                respuesta.Datos = EgresoBLL.LeerUno(id);
             }
             catch (Exception e)
             {
                 respuesta.Codigo = HttpStatusCode.InternalServerError;
                 respuesta.Datos = null;
-                respuesta.Mensajes.Add(e.Message);  //Almacenamos los mensajes errores
+                respuesta.Mensajes.Add(e.Message);
                 respuesta.Mensajes.Add(e.ToString());
             }
 
@@ -70,19 +69,20 @@ namespace WebApi.Controllers
 
 
         [HttpPost]
-        public IHttpActionResult Crear(Medico medico)
+        public IHttpActionResult Crear(Egreso egreso)
         {
-            var respuesta = new RespuestaVMR<long?>();   //porque devuelve el ID del nuevo registro
+            var respuesta = new RespuestaVMR<bool>();
 
             try
             {
-                respuesta.Datos = MedicoBLL.Crear(medico);
+                EgresoBLL.Crear(egreso);
+                respuesta.Datos = true;
             }
             catch (Exception e)
             {
                 respuesta.Codigo = HttpStatusCode.InternalServerError;
-                respuesta.Datos = null;
-                respuesta.Mensajes.Add(e.Message);  //Almacenamos los mensajes errores
+                respuesta.Datos = false;
+                respuesta.Mensajes.Add(e.Message);
                 respuesta.Mensajes.Add(e.ToString());
             }
 
@@ -91,21 +91,21 @@ namespace WebApi.Controllers
 
 
         [HttpPut]
-        public IHttpActionResult Actualizar(long id, MedicoVMR medicoVMR)   //aca pongo id en vez de idMedico porque asi esta en la BD
+        public IHttpActionResult Actualizar(long id, EgresoVMR egresoVMR)
         {
             var respuesta = new RespuestaVMR<bool>();
 
             try
             {
-                medicoVMR.Id = id;
-                MedicoBLL.Actualizar(medicoVMR);
-                respuesta.Datos = true; //devuelve true si los datos se actualizaron
+                egresoVMR.Id = id;
+                EgresoBLL.Actualizar(egresoVMR);
+                respuesta.Datos = true;
             }
             catch (Exception e)
             {
                 respuesta.Codigo = HttpStatusCode.InternalServerError;
                 respuesta.Datos = false;
-                respuesta.Mensajes.Add(e.Message);  //Almacenamos los mensajes errores
+                respuesta.Mensajes.Add(e.Message);
                 respuesta.Mensajes.Add(e.ToString());
             }
 
@@ -114,20 +114,20 @@ namespace WebApi.Controllers
 
 
         [HttpDelete]
-        public IHttpActionResult Eliminar(List<long> idMedicos)
+        public IHttpActionResult Eliminar(List<long> idEgresos)
         {
             var respuesta = new RespuestaVMR<bool>();
 
             try
             {
-                MedicoBLL.Eliminar(idMedicos);
-                respuesta.Datos = true; //devuelve true si los datos se dieron de baja
+                EgresoBLL.Eliminar(idEgresos);
+                respuesta.Datos = true;
             }
             catch (Exception e)
             {
                 respuesta.Codigo = HttpStatusCode.InternalServerError;
                 respuesta.Datos = false;
-                respuesta.Mensajes.Add(e.Message);  //Almacenamos los mensajes errores
+                respuesta.Mensajes.Add(e.Message);
                 respuesta.Mensajes.Add(e.ToString());
             }
 

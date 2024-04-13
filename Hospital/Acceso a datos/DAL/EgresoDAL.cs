@@ -56,12 +56,12 @@ namespace Datos.DAL
             using (var db = DbConexion.Create())
             {
                 egreso = db.Egreso
-                .Where(e => e.borrado && e.id == idEgreso)
+                .Where(e => !e.borrado && e.id == idEgreso)
                 .Select(e => new EgresoVMR
                 {
                     Id = e.id,
-                    IdIngreso = e.id,
-                    IdMedico = e.id,
+                    IdIngreso = e.idIngreso,
+                    IdMedico = e.idMedico,
                     Fecha = e.fecha,
                     Tratamiento = e.tratamiento,
                     Monto = e.monto,

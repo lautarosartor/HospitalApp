@@ -25,6 +25,7 @@ namespace Datos.DAL
                 {
                     Id = i.id,
                     IdPaciente = i.idPaciente,
+                    IdMedico = i.idMedico,
                     Fecha = i.fecha,
                     NumeroSala = i.numeroSala,
                     NumeroCama = i.numeroCama,

@@ -14,7 +14,6 @@ Cada uno de estos metodos devolvera una respuesta las cuales seran consumidas
 desde el frontend por eso se recomienda estandarizar la forma o estructura de
 esa respuesta*/
 
-
 namespace WebApi.Controllers
 {
     //Establecemos los CORS
