@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+/* import { Routes } from '@angular/router';
 import { IndexComponent } from './components/index/index.component';
 
 export const ingresoRoutes: Routes = [
@@ -9,4 +9,4 @@ export const ingresoRoutes: Routes = [
       .then(m => m.IngresoModule)
   }
 ];
-
+ */

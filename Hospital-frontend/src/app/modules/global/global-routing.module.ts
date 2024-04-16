@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { IndexComponent } from './components/index/index.component';
 
 export const globalRoutes: Routes = [
@@ -10,9 +9,3 @@ export const globalRoutes: Routes = [
       .then(m => m.GlobalModule)
   }
 ];
-
-/* @NgModule({
-  imports: [RouterModule.forChild(globalRoutes)],
-  exports: [RouterModule]
-})
-export class GlobalRoutingModule { } */

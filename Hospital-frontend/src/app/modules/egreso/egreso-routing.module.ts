@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+/* import { Routes } from '@angular/router';
 import { IndexComponent } from './components/index/index.component';
 
 export const egresoRoutes: Routes = [
@@ -8,5 +8,4 @@ export const egresoRoutes: Routes = [
     loadChildren: () => import('./egreso.module')
       .then(m => m.EgresoModule)
   }
-];
-
+]; */

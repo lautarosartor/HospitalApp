@@ -1,4 +1,4 @@
-import { RouterModule, Routes } from '@angular/router';
+/* import { Routes } from '@angular/router';
 import { IndexComponent } from './components/index/index.component';
 
 export const pacienteRoutes: Routes = [
@@ -9,4 +9,4 @@ export const pacienteRoutes: Routes = [
       .then(m => m.PacienteModule)
   }
 ];
-
+ */

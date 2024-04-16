@@ -2,3 +2,12 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*Boton crear y barra de busqueda*/
+/* .mat-toolbar .mat-mdc-form-field-subscript-wrapper .mat-mdc-form-field-button-align {
+  display: none;
+} */
+
+.mat-mdc-form-field:not(.mat-mdc-paginator-page-size-select) {
+  width: 100%;
+}
