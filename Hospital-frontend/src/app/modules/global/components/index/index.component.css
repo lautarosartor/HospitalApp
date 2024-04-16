@@ -1,0 +1,21 @@
+.app-panel-container {
+  height: calc(100vh - 64px);
+  background-color: #3F51B5;
+}
+
+.app-panel-container .mat-mdc-card {
+  box-shadow: 0 0 5px #000;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all .3s ease, transform .3s ease;
+}
+
+.app-panel-container .mat-mdc-card:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(.98);
+}
+
+.app-panel-container .mat-mdc-card .mat-icon {
+  transform: scale(3);
+  margin: 40px auto 20px auto;
+}

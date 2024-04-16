@@ -8,6 +8,8 @@ import { MenuGlobalComponent } from './components/menu-global/menu-global.compon
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,18 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     CommonModule,
     //GlobalRoutingModule,
+    RouterModule,
+
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
   ],
   exports: [
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
   ]
 })
 export class GlobalModule { }

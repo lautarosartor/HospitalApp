@@ -8,6 +8,10 @@ const routes: Routes = [
     component: MenuGlobalComponent,
     loadChildren: () => import('./app.rutas')
       .then(m => m.RutasModule)
+  },
+  {
+    path: '**',
+    redirectTo: '/'
   }
 ];
 
