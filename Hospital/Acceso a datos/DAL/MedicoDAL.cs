@@ -70,6 +70,7 @@ namespace Datos.DAL
                     Nombre = m.nombre,
                     ApellidoPaterno = m.apellidoPaterno,
                     ApellidoMaterno = m.apellidoMaterno,
+                    Celular = m.celular,
                     EsEspecialista = m.esEspecialista,
                     Habilitado = m.habilitado,
                 }).FirstOrDefault();
