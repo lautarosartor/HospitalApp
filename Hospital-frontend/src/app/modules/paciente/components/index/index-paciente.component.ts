@@ -3,17 +3,17 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { ToastrService } from 'ngx-toastr';
 import { HttpService } from '../../../../services/http.service';
-import { FormComponent } from '../form/form.component';
+import { FormPacienteComponent } from '../form/form-paciente.component';
 
 @Component({
   selector: 'app-index',
-  templateUrl: './index.component.html',
-  styleUrl: './index.component.css'
+  templateUrl: './index-paciente.component.html',
+  styleUrl: './index-paciente.component.css'
 })
-export class IndexComponent implements OnInit{
+export class IndexPacienteComponent implements OnInit{
 
   //Columnas a visualizar
-  displayedColumns: string[] = ['dni', 'nombre', 'esEspecialista', 'acciones'];
+  displayedColumns: string[] = ['dni', 'nombre', 'celular', 'acciones']
 
   //Datos de las columnas
   dataSource = new MatTableDataSource<any>([]);
@@ -25,7 +25,7 @@ export class IndexComponent implements OnInit{
 
   textoBusqueda = '';
 
-  entidad = 'Medico';
+  entidad = 'Paciente';
 
   constructor(
     private httpService: HttpService,
@@ -34,16 +34,15 @@ export class IndexComponent implements OnInit{
   ) {}
 
   ngOnInit(): void {
-    this.LeerTodo();
+    this.ObtenerPacientes();
   }
 
-  LeerTodo() {
-    //Le pasamos parametros por defecto en este caso
-    this.httpService.LeerTodo(this.cantidadPorPagina, this.numeroDePagina, this.textoBusqueda, this.entidad) //Esto devuelve un observable
-      .subscribe((respuesta: any) => {
-        this.dataSource.data = respuesta.Datos.Elemento;  //Datos.Elemento esta en el backend
-        this.cantidadTotal = respuesta.Datos.CantidadTotal; //Datos.CantidadTotal esta en el backend
-      });
+  ObtenerPacientes() {
+    this.httpService.LeerTodo(this.cantidadPorPagina, this.numeroDePagina, this.textoBusqueda, this.entidad)
+    .subscribe((respuesta: any) => {
+      this.dataSource.data = respuesta.Datos.Elemento;  //Datos.Elemento esta en el backend
+      this.cantidadTotal = respuesta.Datos.CantidadTotal; //Datos.CantidadTotal esta en el backend
+    });
   }
 
   cambiarPagina(event: any) {
@@ -51,28 +50,28 @@ export class IndexComponent implements OnInit{
     this.cantidadPorPagina = event.pageSize;
     this.numeroDePagina = event.pageIndex;
 
-    this.LeerTodo();
+    this.ObtenerPacientes();
   }
 
-  Eliminar(idMedico: number) {
+  EliminarPacientes(idPaciente: number) {
     //Confirmar que se eliminar
-    let confirmacion = confirm('¿Estás seguro de eliminar el registro del médico?');
+    let confirmacion = confirm('¿Estás seguro de eliminar el registro del paciente?');
 
     if (confirmacion) {
-      let idMedicos = [idMedico];
+      let idPacientes = [idPaciente];
 
       //Servicio del backend
-      this.httpService.Eliminar(idMedicos, this.entidad) //Esto devuelve un observable
+      this.httpService.Eliminar(idPacientes, this.entidad)
         .subscribe(() => {
           this.toastr.success('Registro <b>eliminado</b> con éxito', 'Exito');
-          this.LeerTodo();
+          this.ObtenerPacientes();
         });
     }
   }
 
-  Crear() {
-    //Abrir ventana modal de crear medico
-    const dialogRef = this.dialog.open(FormComponent, {
+  CrearPaciente() {
+    //Abrir ventana modal de crear paciente
+    const dialogRef = this.dialog.open(FormPacienteComponent, {
       disableClose: true, //Para no poder cerrar el modal aprentando fuera
       autoFocus: true,
       closeOnNavigation: false,
@@ -88,7 +87,7 @@ export class IndexComponent implements OnInit{
         //Si la respuesta no es undefined es pq se agrego un registro
         if (respuesta === 'guardar') {
           this.toastr.success('Registro <b>agregado</b> correctamente', 'Exito');
-          this.LeerTodo();  //Actualizamos la lista
+          this.ObtenerPacientes();
         }
         else {
           this.toastr.warning('Has <b>cancelado</b> la operación', 'Advertencia');
@@ -96,15 +95,13 @@ export class IndexComponent implements OnInit{
       });
   }
 
-  dobleClickEnRegistro(idMedico: number) {
-    //console.log(idMedico);
-    //Abrir ventana modal de detalle medico
-    const dialogRef = this.dialog.open(FormComponent, {
+  dobleClickEnRegistro(idPaciente: number) {
+    const dialogRef = this.dialog.open(FormPacienteComponent, {
       position: { top: '100px' },
       width: '700px',
       data: {
         tipo: 'DETALLES', //Esto hacemos porque el mismo modal lo utilizaremos para detalles/crear/modificar
-        id: idMedico
+        id: idPaciente
       }
     });
 
@@ -112,16 +109,8 @@ export class IndexComponent implements OnInit{
       .subscribe(respuesta => {
         if (respuesta === 'editar') {
           this.toastr.success('Registro <b>actualizado</b> correctamente', 'Exito');
-          this.LeerTodo();  //Actualizamos la lista
+          this.ObtenerPacientes();
         }
       });
   }
 }
-
-/*
-  Este componente donde implementaremos el GET de los medicos
-  del backend y luego tener el paginado, listado, etc.
-  Para poder invocar o llamar a un servicio desde el backend
-  vamos a necesitar utilizar llamadas a clientes de web services
-  y para ello utilizaremos services.
-*/

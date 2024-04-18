@@ -12,36 +12,37 @@ export class HttpService {
   constructor(private httpClient: HttpClient) {}
 
   //Hacemos la llamada al backend
-  LeerTodo(cantidad: number, pagina: number, textoBusqueda: string) {
+  LeerTodo(cantidad: number, pagina: number, textoBusqueda: string, entidad: string) {
     let parametros = new HttpParams();
 
     parametros = parametros.append('cantidad', cantidad);
     parametros = parametros.append('pagina', pagina);
     parametros = parametros.append('textoBusqueda', textoBusqueda);
 
-    return this.httpClient.get(`${this.url}/Medico`, { params: parametros })
+    return this.httpClient.get(`${this.url}/${entidad}`, { params: parametros })
   }
 
-  Eliminar(idMedicos: number[]) {
+  Eliminar(id: number[], entidad: string) {
     const option = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
       }),
-      body: idMedicos
+      body: id
     };
 
-    return this.httpClient.delete(`${this.url}/Medico`, option);
+    return this.httpClient.delete(`${this.url}/${entidad}`, option);
   }
 
-  Crear(medico: any) {
-    return this.httpClient.post(`${this.url}/Medico`, medico);
+  //Tipo y Entidad hacen referncia a si es (Medico, Paciente, Ingreso, Egreso)
+  Crear(tipo: any, entidad: string) {
+    return this.httpClient.post(`${this.url}/${entidad}`, tipo);
   }
 
-  LeerUno(idMedico: number) {
-    return this.httpClient.get(`${this.url}/Medico/${idMedico}`);
+  LeerUno(id: number, entidad: string) {
+    return this.httpClient.get(`${this.url}/${entidad}/${id}`);
   }
 
-  Actualizar(idMedico: number, dataMedico: any) {
-    return this.httpClient.put(`${this.url}/Medico/${idMedico}`, dataMedico);
+  Actualizar(id: number, datos: any, entidad: string) {
+    return this.httpClient.put(`${this.url}/${entidad}/${id}`, datos);
   }
 }

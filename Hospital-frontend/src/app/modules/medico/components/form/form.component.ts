@@ -11,6 +11,7 @@ import { HttpService } from '../../../../services/http.service';
 export class FormComponent implements OnInit {
 
   title: string = 'Crear';
+  entidad = 'Medico';
 
   formMedico!: FormGroup;
   modoEdicion: boolean = false; //Indicar si estamos en edicion
@@ -52,13 +53,13 @@ export class FormComponent implements OnInit {
   Guardar() {
     const dataMedico = this.formMedico.value as any;
     if (this.modoEdicion) {
-      this.httpService.Actualizar(this.data.id, dataMedico)
+      this.httpService.Actualizar(this.data.id, dataMedico, this.entidad)
         .subscribe({
           next: () => {
             this.dialogRef.close('editar');
           },
           error: (error) => {
-            console.log("No se pudo modificar el registro" + error);
+            console.log("No se pudo modificar el registro. ", error);
           }
         });
     }
@@ -75,7 +76,7 @@ export class FormComponent implements OnInit {
         habilitado: habilitado
       }
 
-      this.httpService.Crear(nuevoMedico)
+      this.httpService.Crear(nuevoMedico, this.entidad)
         .subscribe({
           next: () => {
             //console.log('Registro agregado exitosamente');
@@ -83,7 +84,7 @@ export class FormComponent implements OnInit {
             this.dialogRef.close('guardar');
           },
           error: (error) => {
-            console.log('Error al crear registro', error);
+            console.log('Error al crear registro. ', error);
           }
         });
     }
@@ -112,7 +113,7 @@ export class FormComponent implements OnInit {
   }
 
   cargarDatosParaDetalles() {
-    this.httpService.LeerUno(this.data.id)
+    this.httpService.LeerUno(this.data.id, this.entidad)
       .subscribe({
         next: (respuesta: any) => {
           //this.formMedico.patchValue = respuesta.Datos;
@@ -130,7 +131,7 @@ export class FormComponent implements OnInit {
           });
         },
         error: (error) => {
-          console.log('Error al obtener detalles del registro:', error);
+          console.log('Error al obtener detalles del medico. ', error);
         }
       });
   }

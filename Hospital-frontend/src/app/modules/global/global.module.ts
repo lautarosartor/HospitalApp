@@ -36,7 +36,6 @@ import { ToastrModule } from 'ngx-toastr';
       closeButton: true,
       progressBar: true,
       enableHtml: true,
-
     }),
 
     MatToolbarModule,

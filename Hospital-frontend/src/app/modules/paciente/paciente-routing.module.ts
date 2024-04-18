@@ -1,12 +1,12 @@
-/* import { Routes } from '@angular/router';
-import { IndexComponent } from './components/index/index.component';
+import { Routes } from '@angular/router';
+import { IndexPacienteComponent } from './components/index/index-paciente.component';
 
 export const pacienteRoutes: Routes = [
   {
     path: 'paciente',
-    component: IndexComponent,
+    component: IndexPacienteComponent,
     loadChildren: () => import('./paciente.module')
       .then(m => m.PacienteModule)
   }
 ];
- */
+
