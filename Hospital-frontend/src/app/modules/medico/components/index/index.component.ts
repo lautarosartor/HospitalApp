@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
+import { ToastrService } from 'ngx-toastr';
 import { HttpService } from '../../../../services/http.service';
+import { FormComponent } from '../form/form.component';
 
 @Component({
   selector: 'app-index',
@@ -22,7 +25,11 @@ export class IndexComponent implements OnInit{
 
   textoBusqueda = '';
 
-  constructor(private httpService: HttpService) {}
+  constructor(
+    private httpService: HttpService,
+    private toastr: ToastrService,
+    public dialog: MatDialog,
+  ) {}
 
   ngOnInit(): void {
     this.LeerTodo();
@@ -43,6 +50,69 @@ export class IndexComponent implements OnInit{
     this.numeroDePagina = event.pageIndex;
 
     this.LeerTodo();
+  }
+
+  Eliminar(idMedico: number) {
+    //Confirmar que se eliminar
+    let confirmacion = confirm('¿Estás seguro de eliminar el registro?');
+
+    if (confirmacion) {
+      let idMedicos = [idMedico];
+
+      //Servicio del backend
+      this.httpService.Eliminar(idMedicos) //Esto devuelve un observable
+        .subscribe(() => {
+          this.toastr.success('Registro <b>eliminado</b> con éxito', 'Exito');
+          this.LeerTodo();
+        });
+    }
+  }
+
+  Crear() {
+    //Abrir ventana modal de crear medico
+    const dialogRef = this.dialog.open(FormComponent, {
+      disableClose: true, //Para no poder cerrar el modal aprentando fuera
+      autoFocus: true,
+      closeOnNavigation: false,
+      position: { top: '100px' },
+      width: '700px',
+      data: {
+        tipo: 'CREAR' //Esto hacemos porque el mismo modal lo utilizaremos para detalles/crear/modificar
+      }
+    });
+
+    dialogRef.afterClosed()
+      .subscribe(respuesta => {
+        //Si la respuesta no es unefined es pq se agrego un registro
+        if (respuesta === 'guardar') {
+          this.toastr.success('Registro <b>agregado</b> correctamente', 'Exito');
+          this.LeerTodo();  //Actualizamos la lista
+        }
+        else {
+          this.toastr.warning('Has <b>cancelado</b> la operación', 'Advertencia');
+        }
+      });
+  }
+
+  dobleClickEnRegistro(idMedico: number) {
+    //console.log(idMedico);
+    //Abrir ventana modal de detalle medico
+    const dialogRef = this.dialog.open(FormComponent, {
+      position: { top: '100px' },
+      width: '700px',
+      data: {
+        tipo: 'DETALLES', //Esto hacemos porque el mismo modal lo utilizaremos para detalles/crear/modificar
+        id: idMedico
+      }
+    });
+
+    dialogRef.afterClosed()
+      .subscribe(respuesta => {
+        if (respuesta === 'editar') {
+          this.toastr.success('Registro <b>actualizado</b> correctamente', 'Exito');
+          this.LeerTodo();  //Actualizamos la lista
+        }
+      });
   }
 }
 
